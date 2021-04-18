@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="overlord-timos", # Replace with your own username
+    name="overlord", 
     version="0.0.1",
     author="Timo Schneider",
     author_email="timos@inf.ethz.ch",
     description="Automatically upload files to overleaf.com",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/tim0s/overlord",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/tim0s/overlord/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
