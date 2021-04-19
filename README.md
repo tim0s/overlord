@@ -12,8 +12,9 @@ If you use python to generate your plot as myplot.pdf for your MyGreatResearch p
 plt.savefig("myplot.pdf")
 
 # upload it
-import overlord
-overlord.upload_file("MyGreatResearch", "plots", "myplot.pdf")
+from overlord import overlord
+ol = overlord()
+ol.upload_file("MyGreatResearch", "plots", "myplot.pdf")
 ```
 
 To login to overleaf this module needs your username/email and password. You could pass them as arguments to the upload_file() function. But that would probably lead to your password being comitted to your projects git repo by accident at some point. So overlord also checks for a YAML file in ~/.config/overlord with an email and password attribute:
